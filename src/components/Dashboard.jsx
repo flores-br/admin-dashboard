@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Streams from './Streams';
 import Earnings from './Earnings';
 import TargetAudience from './TargetAudience';
+import TopReleases from './TopReleases';
 
 const Container = styled.section`
   height: 100%;
@@ -39,6 +40,7 @@ const Dashboard = () => {
         </div>
         <div className='row2'>
           <TargetAudience />
+          <TopReleases />
         </div>
       </div>
     </Container>
