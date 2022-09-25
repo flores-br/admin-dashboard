@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { applyCardStyles } from 'components/ReusableStyles';
+import { applyCardStyles } from './ReusableStyles';
 import { AreaChart, Area, Tooltip, ResponsiveContainer } from 'recharts';
 
-import { data, sliderData } from '../dummyData.js';
+import { data, sliderData } from '../dummyData';
 
 const Container = styled.section`
   ${applyCardStyles}

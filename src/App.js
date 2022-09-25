@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Dashboard from './components/Dashboard';
 
 // components
 import Sidebar from './components/Sidebar';
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <Container>
       <Sidebar />
+      <Dashboard />
     </Container>
   );
 };
