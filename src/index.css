@@ -18,8 +18,12 @@ html {
 }
 
 body {
-  background-image: url('assets/background.jpg');
-  background-size: cover;
+  background: rgb(34, 195, 77);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 195, 77, 1) 0%,
+    rgba(45, 84, 253, 1) 100%
+  );
   background-repeat: no-repeat;
   font-family: var(--font);
   height: max-content;
