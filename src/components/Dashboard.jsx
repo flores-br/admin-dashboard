@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
+import scrollreveal from 'scrollreveal';
 
 import Navbar from './Navbar';
 import Streams from './Streams';
@@ -30,6 +32,26 @@ const Container = styled.section`
 `;
 
 const Dashboard = () => {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: 'bottom',
+      distance: '80px',
+      duration: 2000,
+      reset: false,
+    });
+    sr.reveal(
+      `
+        nav,
+        .row,
+        .row2
+    `,
+      {
+        opacity: 0,
+        interval: 100,
+      }
+    );
+  }, []);
+
   return (
     <Container>
       <Navbar />
