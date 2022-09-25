@@ -10,6 +10,11 @@ const Container = styled.section`
   background-color: var(--dark-background-color);
   padding: 0 3rem;
   padding-top: 2rem;
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 0 2rem;
+    padding-top: 2rem;
+  }
 `;
 
 const RightSidebar = () => {
