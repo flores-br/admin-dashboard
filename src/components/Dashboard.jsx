@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Navbar from './Navbar';
 import Streams from './Streams';
 import Earnings from './Earnings';
+import TargetAudience from './TargetAudience';
 
 const Container = styled.section`
   height: 100%;
@@ -35,6 +36,9 @@ const Dashboard = () => {
         <div className='row'>
           <Streams />
           <Earnings />
+        </div>
+        <div className='row2'>
+          <TargetAudience />
         </div>
       </div>
     </Container>
