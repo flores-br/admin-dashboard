@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 import Avatar from './Avatar';
+import ActiveListeners from './ActiveListeners';
+import Player from './Player';
 
 const Container = styled.section`
   height: 100%;
@@ -14,6 +16,8 @@ const RightSidebar = () => {
   return (
     <Container id='rightSidebar'>
       <Avatar />
+      <ActiveListeners />
+      <Player />
     </Container>
   );
 };
