@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import Dashboard from './components/Dashboard';
 
 // components
 import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
+import RightSidebar from './components/RightSidebar';
 
 const Container = styled.div`
   display: grid;
@@ -16,6 +17,7 @@ const App = () => {
     <Container>
       <Sidebar />
       <Dashboard />
+      <RightSidebar />
     </Container>
   );
 };
