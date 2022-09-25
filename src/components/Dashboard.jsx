@@ -29,6 +29,20 @@ const Container = styled.section`
       gap: 1rem;
     }
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    height: max-content;
+    .grid {
+      grid-template-columns: 1fr;
+      padding: 1rem;
+      height: max-content;
+      .row,
+      .row2 {
+        /* height: max-content; */
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 `;
 
 const Dashboard = () => {
