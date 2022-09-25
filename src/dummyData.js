@@ -196,3 +196,27 @@ export const earningsData = [
     amount: 1012,
   },
 ];
+
+export const targetAudienceData = [
+  {
+    uv: 4000,
+  },
+  {
+    uv: 3000,
+  },
+  {
+    uv: 2000,
+  },
+  {
+    uv: 2780,
+  },
+  {
+    uv: 1890,
+  },
+  {
+    uv: 2390,
+  },
+  {
+    uv: 3490,
+  },
+];
