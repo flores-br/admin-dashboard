@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import styled from 'styled-components';
 import scrollreveal from 'scrollreveal';
+import styled from 'styled-components';
 
 import Navbar from './Navbar';
 import Streams from './Streams';

@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import scrollreveal from 'scrollreveal';
 import styled from 'styled-components';
 
 // components
@@ -13,6 +15,37 @@ const Container = styled.div`
 `;
 
 const App = () => {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: 'left',
+      distance: '80px',
+      duration: 1000,
+      reset: false,
+    });
+    sr.reveal(
+      `
+       #sidebar
+    `,
+      {
+        opacity: 0,
+      }
+    );
+    const sr2 = scrollreveal({
+      origin: 'right',
+      distance: '80px',
+      duration: 1000,
+      reset: false,
+    });
+    sr2.reveal(
+      `
+       #rightSidebar
+    `,
+      {
+        opacity: 0,
+      }
+    );
+  }, []);
+
   return (
     <Container>
       <Sidebar />
