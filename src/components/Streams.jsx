@@ -43,6 +43,27 @@ const Container = styled.section`
       box-shadow: 0 0 60px 8px var(--primary-color);
     }
   }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    height: 100%;
+    .title-container {
+      flex-direction: column;
+      gap: 0.5rem;
+      .title {
+        text-align: center;
+      }
+      .slider {
+        .services {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          .service {
+            gap: 0.5rem;
+            min-width: 1rem;
+          }
+        }
+      }
+    }
+  }
 `;
 
 const Streams = () => {
