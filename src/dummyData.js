@@ -177,3 +177,22 @@ export const sliderData = [
     serviceName: 'Apple Music',
   },
 ];
+
+export const earningsData = [
+  {
+    progress: 45,
+    amount: 3125,
+  },
+  {
+    progress: 55,
+    amount: 2731,
+  },
+  {
+    progress: 65,
+    amount: 1315,
+  },
+  {
+    progress: 100,
+    amount: 1012,
+  },
+];
